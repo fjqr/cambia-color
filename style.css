@@ -1,0 +1,75 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-light-gray);
+    display: flex;
+    padding: 12rem;
+  
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.color-container{
+    display: grid;
+    gap: .1rem;
+    grid-template-rows: 6rem;
+    grid-template-columns: repeat(5,6rem);
+}
+.screen{
+    width: 30rem;
+    height: 15rem;
+    background-color: var(--main-dark-gray);
+    border-radius: 2rem;
+}
+.blue,.green,.red,.pink,.violet,.screen{
+    position: relative;
+    border-radius: 4rem;
+}
+
+.blue{
+    background-color: var(--main-blue);
+   }
+
+.red{
+    background-color: var(--main-red);
+   
+}
+
+.green{
+    background-color: var(--main-green);
+  
+}
+
+.violet{
+    background-color: var(--main-violet);
+  
+}
+
+.pink{
+    background-color: var(--main-pink);
+  
+}
+
+.blue:hover, .red:hover, .green:hover, .violet:hover, .pink:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
+}
+:root{
+    --main-blue: rgb(88,88,173);
+    --main-red: rgb(173,88,116);
+    --main-green: rgb(88,173,113);
+    --main-violet: rgb(132,88,173);
+    --main-pink: rgb(235,135,213);
+    --main-light-gray: rgb(206, 206, 207);
+    --main-dark-gray: rgb(94, 94, 116);
+}
+
