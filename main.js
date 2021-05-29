@@ -1,27 +1,41 @@
-let blue = document.querySelector('.blue')
-let red = document.querySelector('.red')
-let green = document.querySelector('.green')
-let violet = document.querySelector('.violet')
-let pink = document.querySelector('.pink')
-let screen = document.querySelector('.screen')
+let blue = document.querySelector(".blue");
+let red = document.querySelector(".red");
+let green = document.querySelector(".green");
+let violet = document.querySelector(".violet");
+let pink = document.querySelector(".pink");
+let screen = document.querySelector(".screen");
 
-cambiaColor = () =>{
-    blue.addEventListener('click',() =>{screen.classList.toggle('blue')
-screen.style.transition= 'ease-in-out, 1s';
-})
-    red.addEventListener('click',() =>{screen.classList.toggle('red')
-    screen.style.transition= 'ease-in-out, 1s'
-})
-    green.addEventListener('click',() =>{screen.classList.toggle('green')
-    screen.style.transition= 'ease-in-out, 1s'
-})
-    violet.addEventListener('click',() =>{screen.classList.toggle('violet')
-    screen.style.transition= 'ease-in-out, 1s'
-})
-    pink.addEventListener('click',() =>{screen.classList.toggle('pink')
-    screen.style.transition= 'ease-in-out, 1s'
-})
-}
+const changer = (color) => {
+  screen.style.backgroundColor = color;
+  screen.style.transition = "ease-in-out, 2s";
+};
 
+cambiaColor = () => {
+  [blue, red, green, violet, pink].find((value) => {
+    value.addEventListener("click", (e) => {
+      switch (e.target) {
+        case blue:
+          changer("#5858ad");
 
-cambiaColor()
+          break;
+        case red:
+          changer("#ad5874");
+          break;
+        case green:
+          changer("#58ad71");
+
+          break;
+        case violet:
+          changer("#8458ad");
+
+          break;
+        case pink:
+          changer("#eb87d5");
+
+          break;
+      }
+    });
+  });
+};
+
+cambiaColor();

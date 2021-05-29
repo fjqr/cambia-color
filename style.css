@@ -64,11 +64,11 @@ box-sizing: border-box;
     transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
 }
 :root{
-    --main-blue: rgb(88,88,173);
-    --main-red: rgb(173,88,116);
-    --main-green: rgb(88,173,113);
-    --main-violet: rgb(132,88,173);
-    --main-pink: rgb(235,135,213);
+    --main-blue: #5858ad;
+    --main-red: #ad5874;
+    --main-green: #58ad71;
+    --main-violet: #8458ad;
+    --main-pink: #eb87d5;
     --main-light-gray: rgb(206, 206, 207);
     --main-dark-gray: rgb(94, 94, 116);
 }
