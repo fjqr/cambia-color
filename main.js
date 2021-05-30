@@ -47,7 +47,7 @@ fondoInstrucciones.classList.add("fondo-ins2");
 
 
 })
-setInterval(() => {
+setTimeout(() => {
   
   fondoInstrucciones.classList.remove("fondo-ins2");
 }, 8000);
