@@ -39,3 +39,19 @@ cambiaColor = () => {
 };
 
 cambiaColor();
+let fondoInstrucciones = document.querySelector(".fondo-instrucciones")
+const displayIntrucciones = () =>{
+ let efecto = addEventListener("load",() => {
+
+fondoInstrucciones.classList.add("fondo-ins2");
+
+
+})
+setInterval(() => {
+  
+  fondoInstrucciones.classList.remove("fondo-ins2");
+}, 8000);
+
+}
+
+displayIntrucciones()
